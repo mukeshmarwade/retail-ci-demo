@@ -1,5 +1,6 @@
 import pandas as pd
 import pandera.pandas as pa
+import numpy as np
 
 order_schema = pa.DataFrameSchema({
     "order_id": pa.Column(
