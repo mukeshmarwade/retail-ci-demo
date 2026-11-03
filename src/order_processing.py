@@ -49,7 +49,7 @@ def calculate_order_total(quantity,
                           discount_pct
                           ):
     subtotal = quantity * unit_price
-    discount = subtotal * discount_pct / 100
+    discount = subtotal * discount_pct
     return round(subtotal - discount, 2)
 
 
