@@ -1,0 +1,6 @@
+test_case_id,scenario,expected_valid
+DV001,valid_data,True
+DV002,duplicate_order_id,False
+DV003,zero_quantity,False
+DV004,invalid_payment_status,False
+DV005,invalid_discount,False

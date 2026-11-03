@@ -1,0 +1,6 @@
+test_case_id,quantity,unit_price,discount_pct,expected_total
+TC001,2,100,0,200
+TC002,5,250,10,1125
+TC003,3,99.50,0,298.50
+TC004,2,150,20,240
+TC005,1,500,5,475
