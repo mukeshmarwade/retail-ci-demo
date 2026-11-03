@@ -1,6 +1,6 @@
 import pandas as pd
 import pandera.pandas as pa
-
+import numpy as np
 order_schema = pa.DataFrameSchema({
     "order_id": pa.Column(
         int,
@@ -48,7 +48,7 @@ def calculate_order_total(quantity,
                           discount_pct
                           ):
     subtotal = quantity * unit_price
-    discount = subtotal * discount_pct / 100
+    discount = subtotal * discount_pct
     return round(subtotal - discount, 2)
 
 
